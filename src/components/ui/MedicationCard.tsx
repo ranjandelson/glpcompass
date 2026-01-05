@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { ChevronDown, Syringe, Pill, Activity, Droplets, CircleDot } from "lucide-react";
+import { ChevronDown, Activity, Droplets, CircleDot } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface MedicationCardProps {
@@ -41,11 +41,17 @@ export function MedicationCard({
       <div className="p-6 md:p-8">
         <div className="flex flex-col md:flex-row gap-6 items-start">
           {/* Medication Image */}
-          <div className="w-full md:w-48 h-48 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl flex items-center justify-center p-4 float-animation">
-            {deliveryMethod === "injection" ? (
-              <Syringe className="w-20 h-20 text-primary/60" />
+          <div className="w-full md:w-48 h-48 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl flex items-center justify-center overflow-hidden float-animation">
+            {imageUrl ? (
+              <img 
+                src={imageUrl} 
+                alt={`${name} medication`}
+                className="w-full h-full object-cover"
+              />
             ) : (
-              <Pill className="w-20 h-20 text-primary/60" />
+              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
+                <span className="text-4xl font-bold text-primary/30">{name.charAt(0)}</span>
+              </div>
             )}
           </div>
 
