@@ -41,7 +41,7 @@ export function MedicationCard({
       <div className="p-6 md:p-8">
         <div className="flex flex-col md:flex-row gap-6 items-start">
           {/* Medication Image */}
-          <div className="w-full md:w-48 h-48 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl flex items-center justify-center overflow-hidden float-animation">
+          <div className="w-full md:w-48 h-48 bg-gradient-to-br from-primary/5 to-accent/5 rounded-2xl flex items-center justify-center overflow-hidden">
             {imageUrl ? (
               <img 
                 src={imageUrl} 
