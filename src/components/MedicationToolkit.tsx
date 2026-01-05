@@ -1,12 +1,10 @@
 import { MedicationCard } from "@/components/ui/MedicationCard";
 import zepboundImg from "@/assets/medications/zepbound.png";
-import mounjaroImg from "@/assets/medications/mounjaro.jpg";
+import mounjaroImg from "@/assets/medications/mounjaro.png";
 import wegovyImg from "@/assets/medications/wegovy.png";
 import ozempicImg from "@/assets/medications/ozempic.png";
 import saxendaImg from "@/assets/medications/saxenda.png";
-import rybelsusImg from "@/assets/medications/rybelsus.jpg";
-import contraveImg from "@/assets/medications/contrave.jpg";
-import metforminImg from "@/assets/medications/metformin.jpg";
+import metforminImg from "@/assets/medications/metformin.png";
 
 const medications = [
   {
@@ -128,54 +126,6 @@ const medications = [
     ],
     drugInteractions:
       "Insulin or sulfonylureas may need dose reduction. May affect absorption of oral medications due to delayed gastric emptying.",
-  },
-  {
-    name: "Rybelsus®",
-    imageUrl: rybelsusImg,
-    type: "GLP-1",
-    activeIngredient: "semaglutide",
-    deliveryMethod: "oral" as const,
-    benefits: ["Balances blood sugar", "Reduces appetite", "Regulates insulin"],
-    boxWarning:
-      "Semaglutide causes thyroid C-cell tumors in rodents. It is unknown whether semaglutide causes thyroid C-cell tumors, including MTC, in humans. Contraindicated in patients with MTC or MEN 2.",
-    warning:
-      "Pancreatitis risk. Hypoglycemia with insulin or sulfonylureas. Acute kidney injury. Diabetic retinopathy complications.",
-    sideEffects: [
-      "Nausea",
-      "Abdominal pain",
-      "Diarrhea",
-      "Decreased appetite",
-      "Vomiting",
-      "Constipation",
-      "Dyspepsia",
-      "Gastritis",
-    ],
-    drugInteractions:
-      "Must be taken on empty stomach at least 30 minutes before first food, beverage, or other medications. May affect absorption of oral medications.",
-  },
-  {
-    name: "Contrave®",
-    imageUrl: contraveImg,
-    type: "Naltrexone/Bupropion",
-    activeIngredient: "naltrexone/bupropion",
-    deliveryMethod: "oral" as const,
-    benefits: ["Reduces appetite", "Reduces cravings"],
-    boxWarning:
-      "Suicidal thoughts and behaviors. Antidepressants increased the risk of suicidal thoughts and behavior in children, adolescents, and young adults. Monitor for worsening and emergence of suicidal thoughts and behaviors.",
-    warning:
-      "Seizure risk. Do not use in patients with seizure disorders or conditions that lower seizure threshold. Uncontrolled hypertension. Opioid-related risks if opioid dependent.",
-    sideEffects: [
-      "Nausea",
-      "Constipation",
-      "Headache",
-      "Vomiting",
-      "Dizziness",
-      "Insomnia",
-      "Dry mouth",
-      "Diarrhea",
-    ],
-    drugInteractions:
-      "Do not use with opioids. MAO inhibitors contraindicated. CYP2B6 inhibitors may increase bupropion exposure. May affect drugs metabolized by CYP2D6.",
   },
   {
     name: "Metformin",
