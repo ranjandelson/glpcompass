@@ -1,8 +1,17 @@
 import { MedicationCard } from "@/components/ui/MedicationCard";
+import zepboundImg from "@/assets/medications/zepbound.jpg";
+import mounjaroImg from "@/assets/medications/mounjaro.jpg";
+import wegovyImg from "@/assets/medications/wegovy.jpg";
+import ozempicImg from "@/assets/medications/ozempic.jpg";
+import saxendaImg from "@/assets/medications/saxenda.jpg";
+import rybelsusImg from "@/assets/medications/rybelsus.jpg";
+import contraveImg from "@/assets/medications/contrave.jpg";
+import metforminImg from "@/assets/medications/metformin.jpg";
 
 const medications = [
   {
     name: "Zepbound®",
+    imageUrl: zepboundImg,
     type: "GLP-1 / GIP",
     activeIngredient: "tirzepatide",
     deliveryMethod: "injection" as const,
@@ -26,6 +35,7 @@ const medications = [
   },
   {
     name: "Mounjaro®",
+    imageUrl: mounjaroImg,
     type: "GLP-1 / GIP",
     activeIngredient: "tirzepatide",
     deliveryMethod: "injection" as const,
@@ -49,6 +59,7 @@ const medications = [
   },
   {
     name: "Wegovy®",
+    imageUrl: wegovyImg,
     type: "GLP-1",
     activeIngredient: "semaglutide",
     deliveryMethod: "injection" as const,
@@ -72,6 +83,7 @@ const medications = [
   },
   {
     name: "Ozempic®",
+    imageUrl: ozempicImg,
     type: "GLP-1",
     activeIngredient: "semaglutide",
     deliveryMethod: "injection" as const,
@@ -95,6 +107,7 @@ const medications = [
   },
   {
     name: "Saxenda®",
+    imageUrl: saxendaImg,
     type: "GLP-1",
     activeIngredient: "liraglutide",
     deliveryMethod: "injection" as const,
@@ -118,6 +131,7 @@ const medications = [
   },
   {
     name: "Rybelsus®",
+    imageUrl: rybelsusImg,
     type: "GLP-1",
     activeIngredient: "semaglutide",
     deliveryMethod: "oral" as const,
@@ -141,6 +155,7 @@ const medications = [
   },
   {
     name: "Contrave®",
+    imageUrl: contraveImg,
     type: "Naltrexone/Bupropion",
     activeIngredient: "naltrexone/bupropion",
     deliveryMethod: "oral" as const,
@@ -164,6 +179,7 @@ const medications = [
   },
   {
     name: "Metformin",
+    imageUrl: metforminImg,
     type: "Biguanide",
     activeIngredient: "metformin",
     deliveryMethod: "oral" as const,
