@@ -1,18 +1,11 @@
 import { Dna, FlaskConical, Heart } from "lucide-react";
-
 export function MedicationHero() {
-  return (
-    <section className="relative min-h-[60vh] flex items-center justify-center hero-gradient overflow-hidden py-20">
+  return <section className="relative min-h-[60vh] flex items-center justify-center hero-gradient overflow-hidden py-20">
       {/* Decorative Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-64 h-64 bg-primary/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-80 h-80 bg-accent/10 rounded-full blur-3xl" />
-        <svg
-          className="absolute top-1/4 right-1/4 text-primary/20 float-animation"
-          width="100"
-          height="100"
-          viewBox="0 0 100 100"
-        >
+        <svg className="absolute top-1/4 right-1/4 text-primary/20 float-animation" width="100" height="100" viewBox="0 0 100 100">
           <circle cx="50" cy="20" r="10" fill="currentColor" opacity="0.5" />
           <circle cx="25" cy="50" r="8" fill="currentColor" opacity="0.3" />
           <circle cx="75" cy="60" r="12" fill="currentColor" opacity="0.4" />
@@ -24,7 +17,7 @@ export function MedicationHero() {
         <div className="animate-fade-in-up stagger-1">
           <span className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border-2 border-primary/20 bg-primary/5 text-primary font-semibold text-sm mb-8">
             <FlaskConical className="w-4 h-4" />
-            Science-Backed Treatment
+            Precision-Biology Backed Treatment
           </span>
         </div>
 
@@ -52,22 +45,23 @@ export function MedicationHero() {
         </div>
 
         {/* Trust Badges */}
-        <div className="flex flex-wrap justify-center gap-6 mt-16 animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
-          {[
-            { icon: Dna, text: "Genetics-Based Care" },
-            { icon: FlaskConical, text: "FDA-Approved Medications" },
-            { icon: Heart, text: "Personalized Treatment" },
-          ].map((badge, index) => (
-            <div
-              key={index}
-              className="flex items-center gap-3 px-5 py-3 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 text-foreground/70"
-            >
+        <div className="flex flex-wrap justify-center gap-6 mt-16 animate-fade-in-up" style={{
+        animationDelay: '0.5s'
+      }}>
+          {[{
+          icon: Dna,
+          text: "Genetics-Based Care"
+        }, {
+          icon: FlaskConical,
+          text: "FDA-Approved Medications"
+        }, {
+          icon: Heart,
+          text: "Personalized Treatment"
+        }].map((badge, index) => <div key={index} className="flex items-center gap-3 px-5 py-3 rounded-full bg-card/80 backdrop-blur-sm border border-border/50 text-foreground/70">
               <badge.icon className="w-5 h-5 text-accent" />
               <span className="font-medium text-sm">{badge.text}</span>
-            </div>
-          ))}
+            </div>)}
         </div>
       </div>
-    </section>
-  );
+    </section>;
 }
