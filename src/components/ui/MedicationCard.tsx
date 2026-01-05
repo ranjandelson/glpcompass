@@ -46,7 +46,7 @@ export function MedicationCard({
               <img 
                 src={imageUrl} 
                 alt={`${name} medication`}
-                className="w-full h-full object-cover"
+                className="w-full h-full object-contain p-2"
               />
             ) : (
               <div className="w-full h-full bg-gradient-to-br from-primary/10 to-accent/10 flex items-center justify-center">
