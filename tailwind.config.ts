@@ -70,9 +70,9 @@ export default {
         "3xl": "1.5rem",
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(31, 38, 135, 0.15)',
-        'card-hover': '0 20px 40px -10px rgba(139, 92, 246, 0.2)',
-        'primary-glow': '0 0 40px rgba(139, 92, 246, 0.3)',
+        'glass': '0 8px 32px 0 rgba(31, 135, 100, 0.15)',
+        'card-hover': '0 20px 40px -10px rgba(16, 185, 129, 0.2)',
+        'primary-glow': '0 0 40px rgba(16, 185, 129, 0.3)',
       },
       keyframes: {
         "accordion-down": {
