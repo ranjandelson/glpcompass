@@ -19,7 +19,7 @@ const biomarkers = [
   {
     icon: TestTube,
     title: "Gut Microbiome",
-    description: "Your gut bacteria play a crucial role in weight management and overall health.",
+    description: "Your gut bacteria play a crucial role in weight management and overall health - USDA",
   },
 ];
 
