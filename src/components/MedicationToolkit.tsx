@@ -1,7 +1,7 @@
 import { MedicationCard } from "@/components/ui/MedicationCard";
 import zepboundImg from "@/assets/medications/zepbound.png";
 import mounjaroImg from "@/assets/medications/mounjaro.png";
-import wegovyImg from "@/assets/medications/wegovy.png";
+import wegovyImg from "@/assets/medications/wegovy-new.png";
 import ozempicImg from "@/assets/medications/ozempic.png";
 import saxendaImg from "@/assets/medications/saxenda.png";
 import metforminImg from "@/assets/medications/metformin.png";
