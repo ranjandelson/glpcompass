@@ -17,10 +17,7 @@ export function CTASection() {
             Get personalized care based on your unique biology. Our clinicians will work with you to find the right treatment plan.
           </p>
 
-          <button className="inline-flex items-center gap-3 px-10 py-5 rounded-full gradient-primary text-primary-foreground font-semibold text-lg hover:shadow-primary-glow transition-all duration-300 hover:-translate-y-1 mb-12">
-            Start Your Assessment
-            <ArrowRight className="w-5 h-5" />
-          </button>
+          
 
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-8">
