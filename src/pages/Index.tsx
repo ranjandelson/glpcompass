@@ -1,5 +1,4 @@
 import { Header } from "@/components/Header";
-import { MedicationHero } from "@/components/MedicationHero";
 import { MedicationToolkit } from "@/components/MedicationToolkit";
 import { ScienceSection } from "@/components/ScienceSection";
 import { CTASection } from "@/components/CTASection";
@@ -10,7 +9,6 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Header />
       <main>
-        <MedicationHero />
         <MedicationToolkit />
         <ScienceSection />
         <CTASection />
