@@ -8,6 +8,30 @@ import metforminImg from "@/assets/medications/metformin.png";
 
 const medications = [
   {
+    name: "Wegovy®",
+    imageUrl: wegovyImg,
+    type: "GLP-1",
+    activeIngredient: "semaglutide",
+    deliveryMethod: "injection" as const,
+    benefits: ["Balances blood sugar", "Reduces appetite", "Regulates insulin"],
+    boxWarning:
+      "Semaglutide causes thyroid C-cell tumors in rodents. It is unknown whether semaglutide causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans. Contraindicated in patients with a personal or family history of MTC or MEN 2.",
+    warning:
+      "Risk of pancreatitis. Discontinue promptly if suspected. Gallbladder problems including gallstones. Acute kidney injury. Hypoglycemia when used with insulin or sulfonylureas.",
+    sideEffects: [
+      "Nausea",
+      "Diarrhea",
+      "Vomiting",
+      "Constipation",
+      "Abdominal pain",
+      "Headache",
+      "Fatigue",
+      "Dizziness",
+    ],
+    drugInteractions:
+      "May delay absorption of oral medications. Dose reduction of insulin or sulfonylureas may be needed to reduce hypoglycemia risk.",
+  },
+  {
     name: "Zepbound®",
     imageUrl: zepboundImg,
     type: "GLP-1 / GIP",
@@ -54,30 +78,6 @@ const medications = [
     ],
     drugInteractions:
       "Delays gastric emptying which may affect absorption of oral medications. Increased risk of hypoglycemia with insulin or sulfonylureas.",
-  },
-  {
-    name: "Wegovy®",
-    imageUrl: wegovyImg,
-    type: "GLP-1",
-    activeIngredient: "semaglutide",
-    deliveryMethod: "injection" as const,
-    benefits: ["Balances blood sugar", "Reduces appetite", "Regulates insulin"],
-    boxWarning:
-      "Semaglutide causes thyroid C-cell tumors in rodents. It is unknown whether semaglutide causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans. Contraindicated in patients with a personal or family history of MTC or MEN 2.",
-    warning:
-      "Risk of pancreatitis. Discontinue promptly if suspected. Gallbladder problems including gallstones. Acute kidney injury. Hypoglycemia when used with insulin or sulfonylureas.",
-    sideEffects: [
-      "Nausea",
-      "Diarrhea",
-      "Vomiting",
-      "Constipation",
-      "Abdominal pain",
-      "Headache",
-      "Fatigue",
-      "Dizziness",
-    ],
-    drugInteractions:
-      "May delay absorption of oral medications. Dose reduction of insulin or sulfonylureas may be needed to reduce hypoglycemia risk.",
   },
   {
     name: "Ozempic®",
