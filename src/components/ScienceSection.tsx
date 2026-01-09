@@ -4,7 +4,7 @@ const biomarkers = [
   {
     icon: Dna,
     title: "Genetics",
-    description: "Your genes influence how your body metabolizes food and responds to medications.",
+    description: "Over 300 genes influence how your body metabolizes food, stores fat and responds to medications.",
   },
   {
     icon: Brain,
