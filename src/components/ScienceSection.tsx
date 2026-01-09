@@ -13,7 +13,7 @@ const biomarkers = [
   },
   {
     icon: Flame,
-    title: "Metabolic Rate",
+    title: "Glucose Control",
     description: "Understanding your metabolic profile helps personalize treatment.",
   },
   {
