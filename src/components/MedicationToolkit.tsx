@@ -13,6 +13,7 @@ const medications = [
     type: "GLP-1",
     activeIngredient: "semaglutide",
     deliveryMethod: "injection" as const,
+    formType: "pill",
     benefits: ["Balances blood sugar", "Reduces appetite", "Regulates insulin"],
     boxWarning:
       "Semaglutide causes thyroid C-cell tumors in rodents. It is unknown whether semaglutide causes thyroid C-cell tumors, including medullary thyroid carcinoma (MTC), in humans. Contraindicated in patients with a personal or family history of MTC or MEN 2.",

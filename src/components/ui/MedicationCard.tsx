@@ -8,6 +8,7 @@ interface MedicationCardProps {
   type: string;
   activeIngredient: string;
   deliveryMethod: "injection" | "oral";
+  formType?: string;
   benefits: string[];
   boxWarning: string;
   warning: string;
@@ -27,6 +28,7 @@ export function MedicationCard({
   type,
   activeIngredient,
   deliveryMethod,
+  formType,
   benefits,
   boxWarning,
   warning,
@@ -59,7 +61,7 @@ export function MedicationCard({
           <div className="flex-1">
             <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">{name}</h3>
             <p className="text-muted-foreground mb-4">
-              <span className="text-primary font-medium">{type}</span> · {activeIngredient} · {deliveryMethod}
+              <span className="text-primary font-medium">{type}</span> · {activeIngredient} · {deliveryMethod}{formType && ` · ${formType}`}
             </p>
 
             {/* Benefits */}
