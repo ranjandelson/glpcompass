@@ -21,9 +21,9 @@ export function CTASection() {
 
           {/* Trust indicators */}
           <div className="flex flex-wrap justify-center gap-8">
-            {[{
+          {[{
             icon: Shield,
-            text: "HIPAA Compliant"
+            text: "24X7 Nutrition and Lifestyle Support"
           }, {
             icon: Clock,
             text: "Fast Consultations"
