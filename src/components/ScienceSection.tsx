@@ -9,7 +9,7 @@ const biomarkers = [
   {
     icon: Brain,
     title: "Hormonal Balance",
-    description: "Hormones like leptin and ghrelin regulate hunger signals and satiety.",
+    description: "Hormones like GLP, GIP, leptin and ghrelin regulate hunger signals and satiety.",
   },
   {
     icon: Flame,
