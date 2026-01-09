@@ -25,8 +25,9 @@ export function ScienceSection() {
             Precision Biology
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-foreground">Understanding </span>
-            <span className="gradient-text">Your Biology</span>
+            <span className="text-foreground">GLP Compass (tm) </span>
+            <span className="gradient-text">
+Understanding Your Biology</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Weight management isn't just about willpower. It's about understanding the complex interaction between your unique biology, food, medication  and lifestyle                                                 
