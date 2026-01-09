@@ -14,7 +14,7 @@ const biomarkers = [
   {
     icon: Flame,
     title: "Glucose Control",
-    description: "Understanding your metabolic profile helps personalize treatment.",
+    description: "Understanding your insulin metabolism helps personalize food to support healthy fat burn.",
   },
   {
     icon: TestTube,
