@@ -59,8 +59,8 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
-        display: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
+        display: ['Manrope', 'system-ui', '-apple-system', 'sans-serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -70,9 +70,9 @@ export default {
         "3xl": "1.5rem",
       },
       boxShadow: {
-        'glass': '0 8px 32px 0 rgba(74, 42, 81, 0.15)',
-        'card-hover': '0 20px 40px -10px rgba(74, 42, 81, 0.2)',
-        'primary-glow': '0 0 40px rgba(74, 42, 81, 0.3)',
+        'glass': '0 8px 32px 0 rgba(80, 29, 204, 0.15)',
+        'card-hover': '0 20px 40px -10px rgba(80, 29, 204, 0.2)',
+        'primary-glow': '0 0 40px rgba(80, 29, 204, 0.3)',
       },
       keyframes: {
         "accordion-down": {
