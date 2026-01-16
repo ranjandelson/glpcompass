@@ -13,7 +13,7 @@ export function CTASection() {
             
             
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto mb-10 text-2xl">
+          <p className="max-w-2xl mx-auto mb-10 text-3xl text-[#4d4d4d]">
             Get personalized care based on your unique biology. Our clinicians will work with you to find the right treatment plan.
           </p>
 
@@ -31,7 +31,7 @@ export function CTASection() {
             icon: Users,
             text: "Expert Clinicians"
           }].map((item, index) => <div key={index} className="flex items-center gap-3 text-muted-foreground">
-                <item.icon className="w-5 h-5 text-accent" />
+                <item.icon className="w-5 h-5 text-[#4f1dcd] bg-white/0" />
                 <span className="font-medium">{item.text}</span>
               </div>)}
           </div>
