@@ -168,7 +168,7 @@ export function MedicationToolkit() {
           </p>
         </div>
 
-        <div className="space-y-6">
+        <div className="space-y-6 max-w-4xl mx-auto">
           {medications.map((medication, index) => (
             <MedicationCard key={index} {...medication} />
           ))}
