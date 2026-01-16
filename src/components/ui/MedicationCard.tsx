@@ -79,9 +79,6 @@ export function MedicationCard({
 
             {/* CTA Buttons */}
             <div className="flex flex-wrap gap-3">
-              <button className="px-6 py-3 rounded-full gradient-primary text-primary-foreground font-semibold hover:shadow-primary-glow transition-all duration-300 hover:-translate-y-0.5">
-                Get Started
-              </button>
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="flex items-center gap-2 px-6 py-3 rounded-full border-2 border-primary/20 text-primary font-semibold hover:bg-primary/5 hover:border-primary transition-all duration-300"
