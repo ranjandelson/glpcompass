@@ -25,7 +25,7 @@ export function ScienceSection() {
             Precision Biology
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="text-foreground text-4xl">GLP Compass (tm) </span>
+            <span className="text-foreground text-4xl">GLP Compass ™ </span>
             <span className="gradient-text text-4xl">
 Understanding Your Biology</span>
           </h2>
