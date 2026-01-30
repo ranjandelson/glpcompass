@@ -1,19 +1,19 @@
-import { Header } from "@/components/Header";
+import { Navbar } from "@/components/Navbar";
 import { MedicationToolkit } from "@/components/MedicationToolkit";
 import { ScienceSection } from "@/components/ScienceSection";
 import { CTASection } from "@/components/CTASection";
-import { Footer } from "@/components/Footer";
+import { SiteFooter } from "@/components/SiteFooter";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <Header />
+      <Navbar />
       <main>
         <MedicationToolkit />
         <ScienceSection />
         <CTASection />
       </main>
-      <Footer />
+      <SiteFooter />
     </div>
   );
 };
