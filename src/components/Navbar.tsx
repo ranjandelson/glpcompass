@@ -24,7 +24,7 @@ const NAV_CONFIG = [
     items: [
       {
         label: "Employers & Payers",
-        href: "https://digbihealth.com/pages/partner",
+        href: "https://employer.digbihealth.ai/",
         icon: Briefcase,
       },
       {
