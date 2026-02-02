@@ -8,7 +8,7 @@ const FOOTER_CONFIG = {
     links: [
       {
         label: "Employers & Payers",
-        href: "https://digbihealth.com/pages/partner",
+        href: "https://employer.digbihealth.ai/",
       },
       {
         label: "Health Care Providers",
