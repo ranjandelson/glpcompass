@@ -14,6 +14,7 @@ import {
   ChevronDown,
   Menu,
   X,
+  Pill,
 } from "lucide-react";
 
 // Navigation configuration - easily updatable
@@ -60,6 +61,11 @@ const NAV_CONFIG = [
         label: "Published Research",
         href: "https://digbihealth.com/blogs/published-research",
         icon: FileText,
+      },
+      {
+        label: "The Medication Toolkit",
+        href: "https://glpcompass.digbihealth.ai/",
+        icon: Pill,
       },
     ],
   },
@@ -379,7 +385,7 @@ export function Navbar() {
           {/* Logo - flex: 0 0 auto */}
           <div className="flex-shrink-0">
             <a
-              href="/"
+              href="https://digbihealth.ai/"
               className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
             >
               <img
@@ -451,7 +457,7 @@ export function Navbar() {
         >
           {/* Drawer Header */}
           <div className="flex items-center justify-between h-16 px-4 border-b border-border">
-            <a href="/" onClick={closeMobileMenu}>
+            <a href="https://digbihealth.ai/" onClick={closeMobileMenu}>
               <img
                 src="https://cdn.shopify.com/s/files/1/2078/0145/files/digbi_logo.svg"
                 alt="Digbi Health"
