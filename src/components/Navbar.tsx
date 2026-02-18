@@ -15,10 +15,21 @@ import {
   Menu,
   X,
   Pill,
+  HeartPulse,
 } from "lucide-react";
 
 // Navigation configuration - easily updatable
 const NAV_CONFIG = [
+  {
+    label: "Program",
+    items: [
+      {
+        label: "GI Health",
+        href: "https://digestive.digbihealth.ai/",
+        icon: HeartPulse,
+      },
+    ],
+  },
   {
     label: "Partner",
     items: [
