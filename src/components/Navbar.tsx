@@ -449,7 +449,7 @@ export function Navbar() {
       {/* Mobile Drawer */}
       <div
         className={cn(
-          "fixed inset-0 z-40 lg:hidden",
+          "fixed inset-0 z-[60] lg:hidden",
           isMobileMenuOpen ? "visible" : "invisible"
         )}
       >
