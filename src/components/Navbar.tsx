@@ -24,6 +24,11 @@ const NAV_CONFIG = [
     label: "Program",
     items: [
       {
+        label: "GLP Compass",
+        href: "https://glpcompass.digbihealth.ai/",
+        icon: Pill,
+      },
+      {
         label: "GI Health",
         href: "https://digestive.digbihealth.ai/",
         icon: HeartPulse,
@@ -75,7 +80,7 @@ const NAV_CONFIG = [
       },
       {
         label: "The Medication Toolkit",
-        href: "https://glpcompass.digbihealth.ai/",
+        href: "https://medicationtoolkit.digbihealth.ai",
         icon: Pill,
       },
     ],
