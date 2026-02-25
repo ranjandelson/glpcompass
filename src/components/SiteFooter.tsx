@@ -37,7 +37,7 @@ const FOOTER_CONFIG = {
       },
       {
         label: "The Medication Toolkit",
-        href: "https://glpcompass.digbihealth.ai/",
+        href: "https://medicationtoolkit.digbihealth.ai",
       },
     ],
   },
