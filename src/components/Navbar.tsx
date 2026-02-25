@@ -391,62 +391,64 @@ export function Navbar() {
   }, [isMobileMenuOpen]);
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
-      <nav
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
-        role="navigation"
-        aria-label="Main navigation"
-      >
-        <div className="flex items-center h-16 lg:h-20">
-          {/* Logo - flex: 0 0 auto */}
-          <div className="flex-shrink-0">
-            <a
-              href="https://digbihealth.ai/"
-              className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
-            >
-              <img
-                src="https://cdn.shopify.com/s/files/1/2078/0145/files/digbi_logo.svg"
-                alt="Digbi Health"
-                className="h-8 lg:h-10 w-auto"
-              />
-            </a>
-          </div>
+    <>
+      <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
+        <nav
+          className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+          role="navigation"
+          aria-label="Main navigation"
+        >
+          <div className="flex items-center h-16 lg:h-20">
+            {/* Logo - flex: 0 0 auto */}
+            <div className="flex-shrink-0">
+              <a
+                href="https://digbihealth.ai/"
+                className="block focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 rounded-md"
+              >
+                <img
+                  src="https://cdn.shopify.com/s/files/1/2078/0145/files/digbi_logo.svg"
+                  alt="Digbi Health"
+                  className="h-8 lg:h-10 w-auto"
+                />
+              </a>
+            </div>
 
-          {/* Desktop Navigation - flex: 1 */}
-          <div className="hidden lg:flex flex-1">
-            <ul className="flex justify-evenly w-full gap-4" role="menubar">
-              {NAV_CONFIG.map((item, idx) => (
-                <li key={idx} role="none">
-                  <DesktopDropdown item={item} />
-                </li>
-              ))}
-            </ul>
-          </div>
+            {/* Desktop Navigation - flex: 1 */}
+            <div className="hidden lg:flex flex-1">
+              <ul className="flex justify-evenly w-full gap-4" role="menubar">
+                {NAV_CONFIG.map((item, idx) => (
+                  <li key={idx} role="none">
+                    <DesktopDropdown item={item} />
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-          {/* Mobile Hamburger Button */}
-          <div className="lg:hidden ml-auto">
-            <button
-              type="button"
-              className={cn(
-                "p-2 rounded-md transition-colors duration-150",
-                "text-foreground hover:text-primary hover:bg-secondary",
-                "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
-              )}
-              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
-              aria-expanded={isMobileMenuOpen}
-              onClick={toggleMobileMenu}
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+            {/* Mobile Hamburger Button */}
+            <div className="lg:hidden ml-auto">
+              <button
+                type="button"
+                className={cn(
+                  "p-2 rounded-md transition-colors duration-150",
+                  "text-foreground hover:text-primary hover:bg-secondary",
+                  "focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
+                )}
+                aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
+                aria-expanded={isMobileMenuOpen}
+                onClick={toggleMobileMenu}
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </header>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer - OUTSIDE header to avoid backdrop-blur containing block */}
       <div
         className={cn(
           "fixed inset-0 z-[60] lg:hidden",
@@ -508,6 +510,6 @@ export function Navbar() {
           </div>
         </div>
       </div>
-    </header>
+    </>
   );
 }
