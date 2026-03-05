@@ -16,6 +16,7 @@ import {
   X,
   Pill,
   HeartPulse,
+  Microscope,
 } from "lucide-react";
 
 // Navigation configuration - easily updatable
@@ -81,7 +82,7 @@ const NAV_CONFIG = [
       {
         label: "Clinical Research",
         href: "https://research.digbihealth.ai/",
-        icon: FlaskConical,
+        icon: Microscope,
       },
       {
         label: "The Medication Toolkit",
