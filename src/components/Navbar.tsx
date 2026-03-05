@@ -79,6 +79,11 @@ const NAV_CONFIG = [
         icon: FileText,
       },
       {
+        label: "Clinical Research",
+        href: "https://research.digbihealth.ai/",
+        icon: FlaskConical,
+      },
+      {
         label: "The Medication Toolkit",
         href: "https://medicationtoolkit.digbihealth.ai",
         icon: Pill,
