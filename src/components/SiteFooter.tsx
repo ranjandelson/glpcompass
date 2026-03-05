@@ -36,6 +36,10 @@ const FOOTER_CONFIG = {
         href: "https://digbihealth.com/blogs/published-research",
       },
       {
+        label: "Clinical Research",
+        href: "https://research.digbihealth.ai/",
+      },
+      {
         label: "The Medication Toolkit",
         href: "https://medicationtoolkit.digbihealth.ai",
       },
