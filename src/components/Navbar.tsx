@@ -130,7 +130,7 @@ interface DropdownProps {
 
 function DesktopDropdown({ item }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
-  const closeTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
   const handleMouseEnter = useCallback(() => {
